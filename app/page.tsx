@@ -1,15 +1,31 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { FaApple, FaAndroid } from "react-icons/fa";
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
-      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-10">
-        حمل اللعبة الان
+      {/* إضافة صورة التطبيق */}
+      <Image
+        src="/img12.png" 
+        alt="App Image"
+        width={150} 
+        height={150} 
+        className="mb-6"
+      />
+      <h1 className="text-center font-bold mb-10">
+        {/* كتابة النص باللغتين */}
+        <span className="block text-xl md:text-3xl lg:text-4xl">
+          قم بتحميل اللعبة الآن
+        </span>
+        <span className="block text-l md:text-2xl lg:text-3xl mt-2">
+          Download the game now
+        </span>
       </h1>
-      <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
+      {/* تغيير توزيع الأزرار ليكون بجانب بعض دائمًا */}
+      <div className="flex flex-row space-x-4">
         {/* زر تطبيق Android */}
         <Link
           href="https://play.google.com/store/apps/details?id=com.hyphonics.abjadpolis"
