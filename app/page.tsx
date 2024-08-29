@@ -24,7 +24,10 @@ export default function Home() {
           Download the game now
         </span>
       </h1>
-      {/* تغيير توزيع الأزرار ليكون بجانب بعض دائمًا */}
+      {/* توضيح الأزرار */}
+      <p className="mb-6 text-center text-sm md:text-base lg:text-lg text-gray-700">
+        اضغط على الزر لتحميل التطبيق
+      </p>
       <div className="flex flex-row space-x-4">
         {/* زر تطبيق Android */}
         <Link
@@ -32,11 +35,9 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button className="flex flex-col items-center p-6 bg-green-500 text-white rounded-xl shadow-2xl hover:shadow-3xl hover:bg-green-600 transition duration-200 transform hover:scale-110">
-            <FaAndroid className="w-16 h-16 lg:w-20 lg:h-20" />
-            <span className="mt-2 text-base md:text-lg lg:text-xl">
-              Android
-            </span>
+          <button className="flex flex-col items-center p-6 bg-green-500 text-white rounded-xl shadow-2xl hover:shadow-3xl hover:bg-green-600 transition duration-200 transform hover:scale-110 active:scale-95">
+            <FaAndroid className="w-16 h-16 lg:w-20 lg:h-20 mb-2 animate-bounce" />
+            <span className="text-base md:text-lg lg:text-xl">Android</span>
           </button>
         </Link>
 
@@ -46,9 +47,9 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button className="flex flex-col items-center p-6 bg-blue-500 text-white rounded-xl shadow-2xl hover:shadow-3xl hover:bg-blue-600 transition duration-200 transform hover:scale-110">
-            <FaApple className="w-16 h-16 lg:w-20 lg:h-20" />
-            <span className="mt-2 text-base md:text-lg lg:text-xl">iPhone</span>
+          <button className="flex flex-col items-center p-6 bg-blue-500 text-white rounded-xl shadow-2xl hover:shadow-3xl hover:bg-blue-600 transition duration-200 transform hover:scale-110 active:scale-95">
+            <FaApple className="w-16 h-16 lg:w-20 lg:h-20 mb-2 animate-bounce" />
+            <span className="text-base md:text-lg lg:text-xl">iPhone</span>
           </button>
         </Link>
       </div>
