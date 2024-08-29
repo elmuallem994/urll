@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { FaApple, FaAndroid } from "react-icons/fa";
-//
+
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
@@ -32,9 +32,9 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button className="flex flex-col items-center p-4 bg-green-500 text-white rounded-lg shadow-md hover:bg-green-600 transition duration-200 transform hover:scale-105">
-            <FaAndroid className="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
-            <span className="mt-2 text-sm md:text-base lg:text-lg">
+          <button className="flex flex-col items-center p-6 bg-green-500 text-white rounded-xl shadow-2xl hover:shadow-3xl hover:bg-green-600 transition duration-200 transform hover:scale-110">
+            <FaAndroid className="w-16 h-16 lg:w-20 lg:h-20" />
+            <span className="mt-2 text-base md:text-lg lg:text-xl">
               Android
             </span>
           </button>
@@ -46,9 +46,9 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button className="flex flex-col items-center p-4 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 transition duration-200 transform hover:scale-105">
-            <FaApple className="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
-            <span className="mt-2 text-sm md:text-base lg:text-lg">iPhone</span>
+          <button className="flex flex-col items-center p-6 bg-blue-500 text-white rounded-xl shadow-2xl hover:shadow-3xl hover:bg-blue-600 transition duration-200 transform hover:scale-110">
+            <FaApple className="w-16 h-16 lg:w-20 lg:h-20" />
+            <span className="mt-2 text-base md:text-lg lg:text-xl">iPhone</span>
           </button>
         </Link>
       </div>
