@@ -25,7 +25,7 @@ export default function Home() {
         </span>
       </h1>
       {/* توضيح الأزرار */}
-      <p className="mb-6 text-center text-sm font-semibold md:text-base lg:text-lg text-red-500">
+      <p className="mb-6 text-center text-sm font-extrabold md:text-base lg:text-lg text-red-500">
         اضغط على الزر لتحميل التطبيق
       </p>
       <div className="flex flex-row space-x-4">
