@@ -9,7 +9,7 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
       {/* إضافة صورة التطبيق */}
       <Image
-        src="/public/img12.PNG"
+        src="/img12.png"
         alt="App Image"
         width={150}
         height={150}
